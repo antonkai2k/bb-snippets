@@ -10,6 +10,7 @@
    - Heading sizes are set in Beaver Builder's Global Styles (since v2.8)
  */
  :root {
+     --h1-margin-top: 0rem;
      --h2-margin-top: 6rem;
      --h3-margin-top: 6rem;
      --h4-margin-top: 6rem;
