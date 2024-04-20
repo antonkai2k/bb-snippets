@@ -56,7 +56,7 @@
     margin-bottom: var(--h2-margin-btm);
 }
 .fl-builder-content h3, .fl-module-content:has(> h3),
-.txt-h3,
+.txt-h3:not(.fl-module),
 :where(.txt-h3.fl-module-rich-text) .fl-module-content  {
     margin-top: var(--h3-margin-top);
     margin-bottom: var(--h3-margin-btm);
@@ -68,13 +68,13 @@
     margin-bottom: var(--h4-margin-btm);
 }
 .fl-builder-content h5, .fl-module-content:has(> h5),
-.txt-h5,
+.txt-h5:not(.fl-module),
 :where(.txt-h5.fl-module-rich-text) .fl-module-content {
     margin-top: var(--h5-margin-top);
     margin-bottom: var(--h5-margin-btm);
 }
 .fl-builder-content h6, .fl-module-content:has(> h6),
-.txt-h6,
+.txt-h6:not(.fl-module),
 :where(.txt-h6.fl-module-rich-text) .fl-module-content {
     margin-top: var(--h6-margin-top);
     margin-bottom: var(--h6-margin-btm);
