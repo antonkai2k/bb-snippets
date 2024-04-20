@@ -1,5 +1,5 @@
 /* 1️⃣
- * Attempting to use default typographic values but overridable by Beaver Builder's editor. Advantages:
+ * Attempting to use default typography values but overridable by Beaver Builder's editor. Advantages:
  *  1) Easy adjustable h1-h6 margins (which missing in Global Styles setitngs)
  *  2) Using h1-h6 styles without real headings (for SEO)
  *  3) No more endless repeated changing margins on every page for every screen width.
@@ -8,6 +8,7 @@
    - em units are highly dependable on parent font size and can be very different.
    - px units are not flexible. Thus we use rem units.
    - Heading sizes are set in Beaver Builder's Global Styles (since v2.8)
+   - Do not use simpler .h1...h6 classes, they are interfering with Bootstrap ones provided by BB
  */
  :root {
      --h1-margin-top: 0rem;
@@ -43,11 +44,13 @@
 
 
 .fl-builder-content h1, .fl-module-content:has(> h1),
-.txt-h1 {
+.txt-h1:not(.fl-module),
+:where(.txt-h1.fl-module-rich-text) .fl-module-content {
     margin-bottom: var(--h1-margin-btm);
 }
 .fl-builder-content h2, .fl-module-content:has(> h2),
-.txt-h2 {
+.txt-h2:not(.fl-module),
+:where(.txt-h2.fl-module-rich-text) .fl-module-content {
     margin-top: var(--h2-margin-top);
     margin-bottom: var(--h2-margin-btm);
 }
