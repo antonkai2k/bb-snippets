@@ -7,7 +7,7 @@
  * Notes:
    - em units are highly dependable on parent font size and can be very different.
    - px units are not flexible. Thus we use rem units.
-   - Heading sizes are set in Beaver Builder's Global Styles
+   - Heading sizes are set in Beaver Builder's Global Styles (since v2.8)
  */
  :root {
      --h2-margin-top: 6rem;
@@ -90,7 +90,6 @@
 .txt-h4 {font-size: var(--fl-global-h4-font-size)}
 .txt-h5 {font-size: var(--fl-global-h5-font-size)}
 .txt-h6 {font-size: var(--fl-global-h6-font-size)}
-.txt-l {font-size: var(--fl-global-h5-font-size)}
 @media (max-width: 1000px) {
 .txt-h1 {font-size: var(--fl-global-h1-font-size-medium)}
 .txt-h2 {font-size: var(--fl-global-h2-font-size-medium)}
@@ -98,7 +97,6 @@
 .txt-h4 {font-size: var(--fl-global-h4-font-size-medium)}
 .txt-h5 {font-size: var(--fl-global-h5-font-size-medium)}
 .txt-h6 {font-size: var(--fl-global-h6-font-size-medium)}
-.txt-l {font-size: var(--fl-global-h5-font-size-medium)}
 }
 @media (max-width: 768px) {
 .txt-h1 {font-size: var(--fl-global-h1-font-size-responsive)}
@@ -107,9 +105,5 @@
 .txt-h4 {font-size: var(--fl-global-h4-font-size-responsive)}
 .txt-h5 {font-size: var(--fl-global-h5-font-size-responsive)}
 .txt-h6 {font-size: var(--fl-global-h6-font-size-responsive)}
-.txt-l {font-size: var(--fl-global-h5-font-size-responsive)}
-}
-@media (min-width: 769px) {
-.txt-huge {word-spacing: -2ex}
 }
 /* 1️⃣ */
