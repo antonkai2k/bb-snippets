@@ -1,0 +1,115 @@
+/* 1️⃣
+ * Attempting to use default typographic values but overridable by Beaver Builder's editor. Advantages:
+ *  1) Easy adjustable h1-h6 margins (which missing in Global Styles setitngs)
+ *  2) Using h1-h6 styles without real headings (for SEO)
+ *  3) No more endless repeated changing margins on every page for every screen width.
+ * Considered as default structure for Beaver Builder projects.
+ * Notes:
+   - em units are highly dependable on parent font size and can be very different.
+   - px units are not flexible. Thus we use rem units.
+   - Heading sizes are set in Beaver Builder's Global Styles
+ */
+ :root {
+     --h2-margin-top: 6rem;
+     --h3-margin-top: 6rem;
+     --h4-margin-top: 6rem;
+     --h5-margin-top: 6rem;
+     --h6-margin-top: 6rem;
+     
+     --h1-margin-btm: 5rem;
+     --h2-margin-btm: 4rem;
+     --h3-margin-btm: 4rem;
+     --h4-margin-btm: 4rem;
+     --h5-margin-btm: 4rem;
+     --h6-margin-btm: 4rem;
+}
+@media (max-width: 768px) {
+:root {
+     --h2-margin-top: 4rem;
+     --h3-margin-top: 4rem;
+     --h4-margin-top: 4rem;
+     --h5-margin-top: 4rem;
+     --h6-margin-top: 4rem;
+     
+     --h1-margin-btm: 3rem;
+     --h2-margin-btm: 2rem;
+     --h3-margin-btm: 2rem;
+     --h4-margin-btm: 2rem;
+     --h5-margin-btm: 2rem;
+     --h6-margin-btm: 2rem;
+}
+}
+
+
+.fl-builder-content h1, .fl-module-content:has(> h1),
+.txt-h1 {
+    margin-bottom: var(--h1-margin-btm);
+}
+.fl-builder-content h2, .fl-module-content:has(> h2),
+.txt-h2 {
+    margin-top: var(--h2-margin-top);
+    margin-bottom: var(--h2-margin-btm);
+}
+.fl-builder-content h3, .fl-module-content:has(> h3),
+.txt-h3 {
+    margin-top: var(--h3-margin-top);
+    margin-bottom: var(--h3-margin-btm);
+}
+.fl-builder-content h4, .fl-module-content:has(> h4),
+.txt-h4:not(.fl-module),
+:where(.txt-h4.fl-module-rich-text) .fl-module-content {
+    margin-top: var(--h4-margin-top);
+    margin-bottom: var(--h4-margin-btm);
+}
+.fl-builder-content h5, .fl-module-content:has(> h5),
+.txt-h5 {
+    margin-top: var(--h5-margin-top);
+    margin-bottom: var(--h5-margin-btm);
+}
+.fl-builder-content h6, .fl-module-content:has(> h6),
+.txt-h6 {
+    margin-top: var(--h6-margin-top);
+    margin-bottom: var(--h6-margin-btm);
+}
+
+
+.fl-builder-content h1:first-child,
+.fl-builder-content h2:first-child,
+.fl-builder-content h3:first-child,
+.fl-builder-content h4:first-child,
+.fl-builder-content h5:first-child,
+.fl-builder-content h6:first-child {
+    margin-top: 0;
+}
+
+
+/* Headings styles for not real headings. CSS vars are default ones used by Beaver Builder */
+.txt-h1 {font-size: var(--fl-global-h1-font-size)}
+.txt-h2 {font-size: var(--fl-global-h2-font-size)}
+.txt-h3 {font-size: var(--fl-global-h3-font-size)}
+.txt-h4 {font-size: var(--fl-global-h4-font-size)}
+.txt-h5 {font-size: var(--fl-global-h5-font-size)}
+.txt-h6 {font-size: var(--fl-global-h6-font-size)}
+.txt-l {font-size: var(--fl-global-h5-font-size)}
+@media (max-width: 1000px) {
+.txt-h1 {font-size: var(--fl-global-h1-font-size-medium)}
+.txt-h2 {font-size: var(--fl-global-h2-font-size-medium)}
+.txt-h3 {font-size: var(--fl-global-h3-font-size-medium)}
+.txt-h4 {font-size: var(--fl-global-h4-font-size-medium)}
+.txt-h5 {font-size: var(--fl-global-h5-font-size-medium)}
+.txt-h6 {font-size: var(--fl-global-h6-font-size-medium)}
+.txt-l {font-size: var(--fl-global-h5-font-size-medium)}
+}
+@media (max-width: 768px) {
+.txt-h1 {font-size: var(--fl-global-h1-font-size-responsive)}
+.txt-h2 {font-size: var(--fl-global-h2-font-size-responsive)}
+.txt-h3 {font-size: var(--fl-global-h3-font-size-responsive)}
+.txt-h4 {font-size: var(--fl-global-h4-font-size-responsive)}
+.txt-h5 {font-size: var(--fl-global-h5-font-size-responsive)}
+.txt-h6 {font-size: var(--fl-global-h6-font-size-responsive)}
+.txt-l {font-size: var(--fl-global-h5-font-size-responsive)}
+}
+@media (min-width: 769px) {
+.txt-huge {word-spacing: -2ex}
+}
+/* 1️⃣ */
