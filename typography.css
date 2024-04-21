@@ -26,21 +26,27 @@
      --h5-margin-btm: 4rem;
      --h6-margin-btm: 4rem;
 }
-@media (max-width: 768px) {
-:root {
-     --h2-margin-top: 4rem;
-     --h3-margin-top: 4rem;
-     --h4-margin-top: 4rem;
-     --h5-margin-top: 4rem;
-     --h6-margin-top: 4rem;
-     
-     --h1-margin-btm: 3rem;
-     --h2-margin-btm: 2rem;
-     --h3-margin-btm: 2rem;
-     --h4-margin-btm: 2rem;
-     --h5-margin-btm: 2rem;
-     --h6-margin-btm: 2rem;
+@media (max-width: 1500px) {
+
 }
+@media (max-width: 1000px) {
+    
+}
+@media (max-width: 768px) {
+   :root {
+        --h2-margin-top: 4rem;
+        --h3-margin-top: 4rem;
+        --h4-margin-top: 4rem;
+        --h5-margin-top: 4rem;
+        --h6-margin-top: 4rem;
+        
+        --h1-margin-btm: 3rem;
+        --h2-margin-btm: 2rem;
+        --h3-margin-btm: 2rem;
+        --h4-margin-btm: 2rem;
+        --h5-margin-btm: 2rem;
+        --h6-margin-btm: 2rem;
+   }
 }
 
 
@@ -91,27 +97,42 @@
 }
 
 
-/* Headings styles for not real headings. CSS vars are default ones used by Beaver Builder */
+/* Headings styles for not real headings. CSS vars are defalut BB's */
 .txt-h1 {font-size: var(--fl-global-h1-font-size)}
 .txt-h2 {font-size: var(--fl-global-h2-font-size)}
 .txt-h3 {font-size: var(--fl-global-h3-font-size)}
 .txt-h4 {font-size: var(--fl-global-h4-font-size)}
 .txt-h5 {font-size: var(--fl-global-h5-font-size)}
 .txt-h6 {font-size: var(--fl-global-h6-font-size)}
-@media (max-width: 1000px) {
-.txt-h1 {font-size: var(--fl-global-h1-font-size-medium)}
-.txt-h2 {font-size: var(--fl-global-h2-font-size-medium)}
-.txt-h3 {font-size: var(--fl-global-h3-font-size-medium)}
-.txt-h4 {font-size: var(--fl-global-h4-font-size-medium)}
-.txt-h5 {font-size: var(--fl-global-h5-font-size-medium)}
-.txt-h6 {font-size: var(--fl-global-h6-font-size-medium)}
+.txt-l  {font-size: var(--fl-global-h5-font-size)}
+
+@media (max-width: 1500px) {
+    .txt-h1 {font-size: var(--fl-global-h1-font-size-large, var(--fl-global-h1-font-size))}
+    .txt-h2 {font-size: var(--fl-global-h2-font-size-large, var(--fl-global-h2-font-size))}
+    .txt-h3 {font-size: var(--fl-global-h3-font-size-large, var(--fl-global-h3-font-size))}
+    .txt-h4 {font-size: var(--fl-global-h4-font-size-large, var(--fl-global-h4-font-size))}
+    .txt-h5 {font-size: var(--fl-global-h5-font-size-large, var(--fl-global-h5-font-size))}
+    .txt-h6 {font-size: var(--fl-global-h6-font-size-large, var(--fl-global-h6-font-size))}
+    .txt-l  {font-size: var(--fl-global-h5-font-size-large, var(--fl-global-h5-font-size))}
 }
+
+@media (max-width: 1000px) {
+    .txt-h1 {font-size: var(--fl-global-h1-font-size-medium, var(--fl-global-h1-font-size-large), var(--fl-global-h1-font-size))}
+    .txt-h2 {font-size: var(--fl-global-h2-font-size-medium, var(--fl-global-h1-font-size-large), var(--fl-global-h2-font-size))}
+    .txt-h3 {font-size: var(--fl-global-h3-font-size-medium, var(--fl-global-h1-font-size-large), var(--fl-global-h3-font-size))}
+    .txt-h4 {font-size: var(--fl-global-h4-font-size-medium, var(--fl-global-h1-font-size-large), var(--fl-global-h4-font-size))}
+    .txt-h5 {font-size: var(--fl-global-h5-font-size-medium, var(--fl-global-h1-font-size-large), var(--fl-global-h5-font-size))}
+    .txt-h6 {font-size: var(--fl-global-h6-font-size-medium, var(--fl-global-h1-font-size-large), var(--fl-global-h6-font-size))}
+    .txt-l  {font-size: var(--fl-global-h5-font-size-medium, var(--fl-global-h5-font-size-large), var(--fl-global-h5-font-size))}
+}
+
 @media (max-width: 768px) {
-.txt-h1 {font-size: var(--fl-global-h1-font-size-responsive)}
-.txt-h2 {font-size: var(--fl-global-h2-font-size-responsive)}
-.txt-h3 {font-size: var(--fl-global-h3-font-size-responsive)}
-.txt-h4 {font-size: var(--fl-global-h4-font-size-responsive)}
-.txt-h5 {font-size: var(--fl-global-h5-font-size-responsive)}
-.txt-h6 {font-size: var(--fl-global-h6-font-size-responsive)}
+    .txt-h1 {font-size: var(--fl-global-h1-font-size-responsive, var(--fl-global-h1-font-size-medium), var(--fl-global-h1-font-size-large), var(--fl-global-h1-font-size))}
+    .txt-h2 {font-size: var(--fl-global-h2-font-size-responsive, var(--fl-global-h2-font-size-medium), var(--fl-global-h2-font-size-large), var(--fl-global-h2-font-size))}
+    .txt-h3 {font-size: var(--fl-global-h3-font-size-responsive, var(--fl-global-h3-font-size-medium), var(--fl-global-h3-font-size-large), var(--fl-global-h3-font-size))}
+    .txt-h4 {font-size: var(--fl-global-h4-font-size-responsive, var(--fl-global-h4-font-size-medium), var(--fl-global-h4-font-size-large), var(--fl-global-h4-font-size))}
+    .txt-h5 {font-size: var(--fl-global-h5-font-size-responsive, var(--fl-global-h5-font-size-medium), var(--fl-global-h5-font-size-large), var(--fl-global-h5-font-size))}
+    .txt-h6 {font-size: var(--fl-global-h6-font-size-responsive, var(--fl-global-h6-font-size-medium), var(--fl-global-h6-font-size-large), var(--fl-global-h6-font-size))}
+    .txt-l {font-size: var(--fl-global-h5-font-size-responsive, var(--fl-global-h5-font-size-medium), var(--fl-global-h5-font-size-large), var(--fl-global-h5-font-size))}
 }
 /* 1️⃣ */
