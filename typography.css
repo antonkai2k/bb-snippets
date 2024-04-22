@@ -1,14 +1,13 @@
-/* 1️⃣
- * Attempting to use default typography values but overridable by Beaver Builder's editor. Advantages:
+/* Attempting to use default typography values but overridable by Beaver Builder's editor. Advantages:
  *  1) Easy adjustable h1-h6 margins (which missing in Global Styles setitngs)
  *  2) Using h1-h6 styles without real headings (for SEO)
  *  3) No more endless repeated changing margins on every page for every screen width.
- * Considered as default structure for Beaver Builder projects.
+ * Suggested default structure for Beaver Builder projects.
  * Notes:
    - em units are highly dependable on parent font size and can be very different.
    - px units are not flexible. Thus we use rem units.
    - Heading sizes are set in Beaver Builder's Global Styles (since v2.8)
-   - Do not use simpler .h1...h6 classes, they are interfering with Bootstrap ones provided by BB
+   - Do not use simpler .h1...h6 classes, since they are interfering with Bootstrap ones provided by BB
    - Edit @media breakpoints according to your BB settings
  */
  :root {
@@ -49,7 +48,7 @@
    }
 }
 
-
+/* Not intended to edit */
 .fl-builder-content h1, .fl-module-content:has(> h1),
 .txt-h1:not(.fl-module),
 :where(.txt-h1.fl-module-rich-text) .fl-module-content  {
@@ -104,7 +103,6 @@
 .txt-h4 {font-size: var(--fl-global-h4-font-size)}
 .txt-h5 {font-size: var(--fl-global-h5-font-size)}
 .txt-h6 {font-size: var(--fl-global-h6-font-size)}
-.txt-l  {font-size: var(--fl-global-h5-font-size)}
 
 @media (max-width: 1500px) {
     .txt-h1 {font-size: var(--fl-global-h1-font-size-large, var(--fl-global-h1-font-size))}
@@ -113,7 +111,6 @@
     .txt-h4 {font-size: var(--fl-global-h4-font-size-large, var(--fl-global-h4-font-size))}
     .txt-h5 {font-size: var(--fl-global-h5-font-size-large, var(--fl-global-h5-font-size))}
     .txt-h6 {font-size: var(--fl-global-h6-font-size-large, var(--fl-global-h6-font-size))}
-    .txt-l  {font-size: var(--fl-global-h5-font-size-large, var(--fl-global-h5-font-size))}
 }
 
 @media (max-width: 1000px) {
@@ -123,7 +120,6 @@
     .txt-h4 {font-size: var(--fl-global-h4-font-size-medium, var(--fl-global-h1-font-size-large), var(--fl-global-h4-font-size))}
     .txt-h5 {font-size: var(--fl-global-h5-font-size-medium, var(--fl-global-h1-font-size-large), var(--fl-global-h5-font-size))}
     .txt-h6 {font-size: var(--fl-global-h6-font-size-medium, var(--fl-global-h1-font-size-large), var(--fl-global-h6-font-size))}
-    .txt-l  {font-size: var(--fl-global-h5-font-size-medium, var(--fl-global-h5-font-size-large), var(--fl-global-h5-font-size))}
 }
 
 @media (max-width: 768px) {
@@ -133,6 +129,5 @@
     .txt-h4 {font-size: var(--fl-global-h4-font-size-responsive, var(--fl-global-h4-font-size-medium), var(--fl-global-h4-font-size-large), var(--fl-global-h4-font-size))}
     .txt-h5 {font-size: var(--fl-global-h5-font-size-responsive, var(--fl-global-h5-font-size-medium), var(--fl-global-h5-font-size-large), var(--fl-global-h5-font-size))}
     .txt-h6 {font-size: var(--fl-global-h6-font-size-responsive, var(--fl-global-h6-font-size-medium), var(--fl-global-h6-font-size-large), var(--fl-global-h6-font-size))}
-    .txt-l {font-size: var(--fl-global-h5-font-size-responsive, var(--fl-global-h5-font-size-medium), var(--fl-global-h5-font-size-large), var(--fl-global-h5-font-size))}
 }
-/* 1️⃣ */
+
