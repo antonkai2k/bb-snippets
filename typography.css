@@ -8,6 +8,7 @@
    - px units are not flexible. Thus we use rem units.
    - Heading sizes are set in Beaver Builder's Global Styles (since v2.8)
    - Do not use simpler .h1...h6 classes, since they are interfering with Bootstrap ones provided by BB
+   - There should be a font size set for at least the maximum screen in Global Styles, so that missing intermediate ones will default to it
    - Edit @media breakpoints according to your BB settings
  */
  :root {
